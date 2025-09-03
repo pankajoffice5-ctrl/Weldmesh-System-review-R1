@@ -1,0 +1,178 @@
+/* ===== Global Styles ===== */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;   /* stack container and form vertically */
+    justify-content: flex-start;
+    align-items: center;      /* center horizontally */
+    gap: 30px;                /* space between container & form */
+    min-height: 100vh;
+}
+
+/* Back to Home button */
+a {
+    position: fixed;
+    top: 5vh;
+    left: 40vh;
+    display: inline-block;
+    padding: 8px 14px;
+    background-color: #27ae60;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: 0.3s;
+
+}
+a:hover {
+
+
+    background-color: #1e8449;
+}
+
+/* ===== Container Section ===== */
+.container {
+    background-color: #91e2b3;
+    padding: 25px 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    width: 600px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+/* Logo */
+#LMELOGO {
+    display: block;
+    max-width: 120px;
+    margin: 0 auto 10px;
+}
+
+/* Header */
+header h1 {
+    font-size: 26px;
+    margin: 5px 0;
+    color: #2c3e50;
+}
+header .subtitle {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+/* Client info */
+.info-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 12px;
+    text-align: left;
+}
+.info-group label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.info-group input,
+.info-group select {
+    padding: 8px;
+    border: 1px solid #bbb;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+/* ===== Summary Section ===== */
+.summary h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    text-decoration: underline;
+    color: #2c3e50;
+    text-align: left;
+}
+.summary-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+}
+.summary-item span {
+    font-weight: bold;
+    color: #333;
+}
+.summary-item input {
+    width: 120px;
+    padding: 6px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    text-align: right;
+}
+.summary-item .unit {position: absolute;
+    margin-left: 5px;
+    font-size: 13px;
+    color: #555;
+    left: 105vh;
+}
+/* ===== Form Section ===== */
+form {
+    background-color: #91e2b3;
+    padding: 25px 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    width: 600px;
+    box-sizing: border-box;
+}
+
+form label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+    text-align: left;
+}
+form select,
+form input[type="text"],
+form input[type="number"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #bbb;
+    border-radius: 6px;
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+
+/* Fieldset styling */
+fieldset {
+    border: 1px solid #aaa;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    padding: 15px;
+}
+fieldset legend {
+    font-weight: bold;
+    padding: 0 6px;
+}
+
+/* Submit button */
+button,
+input[type="submit"] {
+    display: inline-block;
+    padding: 12px 20px;
+    font-size: 16px;
+    background-color: #319dcf;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+button:hover,
+input[type="submit"]:hover {
+    background-color: #10b0fa;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 700px) {
+    .container,
+    form {
+        width: 95%;
+    }
+}
