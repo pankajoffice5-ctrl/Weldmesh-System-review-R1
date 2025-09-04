@@ -85,33 +85,37 @@ header .subtitle {
 .summary h3 {
     font-size: 20px;
     margin-bottom: 15px;
-    text-decoration: underline;
+    text-decoration:underline;
     color: #2c3e50;
-    text-align: left;
+    text-align: center;
 }
 .summary-item {
     display: flex;
-    justify-content: space-between;
+    justify-content:end;
     align-items: center;
-    margin-bottom: 8px;
+    margin-bottom: 10px;
+      gap: 2vh;
+      margin-right: 6vh;
 }
 .summary-item span {
     font-weight: bold;
     color: #333;
 }
 .summary-item input {
-    width: 120px;
+    width: 80px;
     padding: 6px;
     border: 1px solid #ccc;
     border-radius: 6px;
     text-align: right;
 }
-.summary-item .unit {position: absolute;
-    margin-left: 5px;
+.summary-item .unit {
+    margin-left: 2px;
     font-size: 13px;
     color: #555;
-    left: 105vh;
+    width: 40px;
 }
+
+
 /* ===== Form Section ===== */
 form {
     background-color: #91e2b3;
